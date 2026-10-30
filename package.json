@@ -1,0 +1,11 @@
+{
+  "name": "mani-co",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm install --include=dev --prefix client && npm run build --prefix client && npm install --prefix server",
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  }
+}
